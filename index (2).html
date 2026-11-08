@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOLAR — резервное питание для офиса и бизнеса</title>
+<meta name="description" content="Подберём и установим инвертор, аккумуляторы и солнечные панели. Офис работает, даже когда отключили свет. 15 лет на рынке.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#F5A623;--ink:#111418;--muted:#5B6370;--light:#F4F5F7;--line:#E6E8EC;--dark2:#1B2028;--soft:#C9CED6}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:#fff}
+a{color:var(--ink)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:14px 26px;border-radius:8px;font-weight:700;font-size:16px;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
+.btn-accent{background:var(--accent);color:var(--ink)}
+.btn-outline{border:1px solid #fff;color:#fff}
+.topbar{background:var(--ink);color:var(--soft);font-size:14px}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center;padding-top:10px;padding-bottom:10px}
+.topbar a{color:#fff;font-weight:600;text-decoration:none}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px}
+.logo{display:flex;align-items:center;gap:10px;font-size:26px;font-weight:800;letter-spacing:1px}
+nav{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:15px;font-weight:600}
+nav a{text-decoration:none}
+.hero{background:var(--ink);color:#fff}
+.hero .wrap{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding-top:88px;padding-bottom:88px}
+.hero-text{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.eyebrow{font-size:15px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1.5px}
+h1{margin:0;font-size:56px;line-height:1.08;font-weight:800}
+.lead{margin:0;font-size:19px;line-height:1.6;color:var(--soft);max-width:560px}
+.trust{display:flex;align-items:center;gap:16px}
+.trust b.num{font-size:56px;font-weight:800;color:var(--accent);line-height:1}
+.trust span{border-left:1px solid #3A414B;padding-left:16px;line-height:1.5;color:var(--soft)}
+.trust span b{color:#fff;font-size:18px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.ph{background:var(--light);border:1px dashed #C3C8D0;border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:16px}
+.hero-img{flex:1 1 420px;min-width:0;width:100%;height:440px;object-fit:cover;border-radius:16px;background:#232932;filter:sepia(.3) saturate(1.15)}
+.card img{width:100%;height:200px;object-fit:cover;display:block;background:var(--light)}
+.photo{position:relative;border-radius:14px;overflow:hidden;background:#232932;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#fff}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.75),rgba(0,0,0,0) 55%)}
+.photo .t,.photo .s{position:relative;z-index:1}
+.photo .t{font-size:18px;font-weight:700}
+.photo .s{font-size:14px;color:#E1E4E8}
+.benefits{background:var(--dark2);color:#fff}
+.benefits .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding-top:28px;padding-bottom:28px;font-weight:600}
+.benefits div{display:flex;gap:12px;align-items:center}
+section.block{padding:96px 0}
+section.gray{background:var(--light)}
+.head{text-align:center;margin-bottom:48px}
+h2{margin:0 0 12px;font-size:40px;font-weight:800;line-height:1.15}
+.head p{margin:0;font-size:18px;color:var(--muted)}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.card{border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.card .ph{height:200px;border:none;border-radius:0}
+.card-body{padding:24px;display:flex;flex-direction:column;gap:10px;flex-grow:1}
+h3{margin:0;font-size:20px;font-weight:700}
+.card p,.step p{margin:0;font-size:15px;line-height:1.55;color:var(--muted)}
+.card p{flex-grow:1}
+.price{font-size:18px;font-weight:800}
+.step{background:#fff;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.step .n{width:48px;height:48px;border-radius:50%;background:var(--accent);font-weight:800;font-size:20px;display:flex;align-items:center;justify-content:center}
+.works{display:flex;flex-wrap:wrap;gap:24px}
+.work{flex-direction:column;align-items:stretch;justify-content:flex-end;text-align:left;padding:24px}
+.work .t{font-size:18px;font-weight:700;color:var(--ink)}
+.work .s{font-size:14px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.review{background:#fff;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:16px}
+.review .q{font-size:40px;line-height:.6;color:var(--accent);font-weight:800}
+.review p{margin:0;font-size:16px;line-height:1.6}
+.formblock{background:var(--ink);color:#fff}
+.formblock .wrap{display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
+.formblock .text{flex:1 1 420px;min-width:0}
+.formblock .text p{font-size:18px;line-height:1.6;color:var(--soft)}
+form{flex:1 1 420px;min-width:0;background:var(--dark2);border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:18px}
+form label{display:flex;flex-direction:column;gap:8px;font-size:15px;font-weight:600}
+form input[type=text],form input[type=tel],form textarea{font:inherit;font-weight:400;padding:14px;border-radius:8px;border:1px solid #3A414B;background:var(--ink);color:#fff}
+form .check{flex-direction:row;gap:10px;align-items:flex-start;font-size:14px;font-weight:400;line-height:1.5;color:var(--soft)}
+form .check input{margin-top:3px;width:18px;height:18px}
+footer{background:#0B0E12;color:var(--soft);padding:56px 0 32px;font-size:15px;line-height:1.7}
+footer a{color:var(--soft);text-decoration:none}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px}
+.fgrid div{display:flex;flex-direction:column;gap:4px}
+.ftitle{font-weight:700;color:#fff}
+.fbottom{border-top:1px solid #262C35;margin-top:32px;padding-top:24px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:14px}
+.fbottom a{text-decoration:underline}
+@media (max-width:1024px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){
+.grid4{grid-template-columns:minmax(0,1fr)}
+h1{font-size:36px}h2{font-size:30px}
+.hero .wrap{padding-top:48px;padding-bottom:48px}
+.hero-img{height:260px}
+section.block{padding:64px 0}
+.trust b.num{font-size:44px}
+form{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+<div style="display:flex;flex-wrap:wrap;gap:8px 24px"><span><a href="tel:+79008888777" style="color:inherit;text-decoration:none">+7 (900) 888-87-77</a></span><span><a href="mailto:solar@gmail.com" style="color:inherit">solar@gmail.com</a></span><span>Поставка и монтаж по всей России</span></div>
+<a href="#form">Написать в мессенджер</a>
+</div></div>
+
+<header><div class="wrap">
+<div class="logo"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>SOLAR</div>
+<nav><a href="#products">Оборудование</a><a href="#how">Как работаем</a><a href="#works">Наши работы</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+<a href="#form" class="btn btn-accent">Рассчитать систему</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<div class="hero-text">
+<div class="eyebrow">Резервное питание для офиса и бизнеса</div>
+<h1>Офис работает, даже когда отключили свет</h1>
+<p class="lead">Подберём и установим инвертор, аккумуляторы и солнечные панели. Компьютеры, связь, касса и освещение продолжают работать, клиенты не замечают отключения.</p>
+<div class="trust"><b class="num">15</b><span><b>лет на рынке</b><br>работаем с 2011 года</span></div>
+<div class="btns"><a href="#form" class="btn btn-accent">Рассчитать систему для офиса</a><a href="#form" class="btn btn-outline">Написать в мессенджер</a></div>
+<div style="font-size:18px;font-weight:700"><a href="tel:+79008888777" style="color:inherit;text-decoration:none">+7 (900) 888-87-77</a></div>
+</div>
+<img class="hero-img" src="https://images.unsplash.com/photo-1758520145140-c2dd8e78fc02?auto=format&fit=crop&w=1200&q=70" alt="Сотрудники работают вечером в офисе с тёплым светом">
+</div></section>
+
+<section class="benefits"><div class="wrap">
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Расчёт под технику вашего офиса</div>
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Монтаж без остановки работы</div>
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Гарантия производителя и 1 год на монтаж</div>
+<div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg>Сервис после запуска</div>
+</div></section>
+
+<section class="block" id="products"><div class="wrap">
+<div class="head"><h2>Оборудование</h2><p>Всё, чтобы офис, магазин или склад не останавливались при отключениях</p></div>
+<div class="grid4">
+<div class="card"><img src="https://images.unsplash.com/photo-1780444745115-a58369e913ee?auto=format&fit=crop&w=800&q=70" alt="Электрический щит с автоматами" loading="lazy"><div class="card-body"><h3>Инверторы</h3><p>Автоматически переключают офис на резерв, как только пропадает сеть.</p><div class="price">от 100&nbsp;000&nbsp;₽</div><a href="#form"><b>Подробнее и расчёт</b></a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1780445392417-68b9dccc45f2?auto=format&fit=crop&w=800&q=70" alt="Настенная система хранения энергии" loading="lazy"><div class="card-body"><h3>Аккумуляторы</h3><p>Запас энергии на [N] часов работы техники офиса.</p><div class="price">от 95&nbsp;000&nbsp;₽</div><a href="#form"><b>Подробнее и расчёт</b></a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1780445392628-d6f5b9e5609b?auto=format&fit=crop&w=800&q=70" alt="Солнечные панели на металлической крыше здания" loading="lazy"><div class="card-body"><h3>Солнечные панели</h3><p>Днём подзаряжают аккумуляторы и снижают счета за электричество.</p><div class="price">от 15&nbsp;000&nbsp;₽</div><a href="#form"><b>Подробнее и расчёт</b></a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1658298775754-5839ffd434cc?auto=format&fit=crop&w=800&q=70" alt="Солнечные панели на крыше" loading="lazy"><div class="card-body"><h3>Готовые решения</h3><p>Подобранные комплекты для офиса, магазина и склада с монтажом.</p><div class="price">от 300&nbsp;000&nbsp;₽</div><a href="#form"><b>Подробнее и расчёт</b></a></div></div>
+</div>
+</div></section>
+
+<section class="block gray" id="how"><div class="wrap">
+<div class="head"><h2>Как мы работаем</h2><p>От заявки до работающей системы, без остановки вашего бизнеса</p></div>
+<div class="grid4">
+<div class="step"><div class="n">1</div><h3>Заявка</h3><p>Перезваниваем и выясняем, какая техника должна работать при отключении.</p></div>
+<div class="step"><div class="n">2</div><h3>Расчёт</h3><p>Считаем мощность и время работы, присылаем предложение с ценой.</p></div>
+<div class="step"><div class="n">3</div><h3>Монтаж</h3><p>Устанавливаем в удобное время, не останавливая работу офиса.</p></div>
+<div class="step"><div class="n">4</div><h3>Запуск и сервис</h3><p>Проверяем систему, обучаем сотрудников и остаёмся на связи.</p></div>
+</div>
+</div></section>
+
+<section class="block" id="works"><div class="wrap">
+<div class="head"><h2>Наши работы</h2><p>Офисы и магазины, которые теперь не боятся отключений</p></div>
+<div class="works">
+<div class="photo" style="flex:2 1 480px;min-width:0;height:460px"><img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?auto=format&fit=crop&w=1200&q=70" alt="Монтаж солнечной панели на крыше" loading="lazy"><div class="t" style="font-size:20px">[Офис компании: резервное питание на всё здание]</div><div class="s">[Оборудование, мощность, город]</div></div>
+<div style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:24px">
+<div class="photo" style="height:218px"><img src="https://images.unsplash.com/photo-1780445392694-c95056ed12e2?auto=format&fit=crop&w=800&q=70" alt="Солнечная панель на крыше" loading="lazy"><div class="t">[Магазин: касса и холодильники]</div><div class="s">[Оборудование, город]</div></div>
+<div class="photo" style="height:218px"><img src="https://images.unsplash.com/photo-1584169417032-d34e8d805e8b?auto=format&fit=crop&w=800&q=70" alt="Стойки с оборудованием связи" loading="lazy"><div class="t">[Склад: связь и учёт]</div><div class="s">[Оборудование, город]</div></div>
+</div>
+</div>
+</div></section>
+
+<section class="block gray" id="reviews"><div class="wrap">
+<div class="head"><h2>Отзывы клиентов</h2><p>[Рейтинг и ссылка на отзывы в Яндекс Картах]</p></div>
+<div class="reviews">
+<div class="review"><div class="q" aria-hidden="true">“</div><p>[Текст отзыва клиента]</p><div><b>[Имя, компания]</b> <span style="color:var(--muted)">· [дата, источник]</span></div></div>
+<div class="review"><div class="q" aria-hidden="true">“</div><p>[Текст отзыва клиента]</p><div><b>[Имя, компания]</b> <span style="color:var(--muted)">· [дата, источник]</span></div></div>
+<div class="review"><div class="q" aria-hidden="true">“</div><p>[Текст отзыва клиента]</p><div><b>[Имя, компания]</b> <span style="color:var(--muted)">· [дата, источник]</span></div></div>
+</div>
+</div></section>
+
+<section class="block formblock" id="form"><div class="wrap">
+<div class="text"><h2>Рассчитаем систему для вашего офиса</h2><p>Оставьте заявку: перезвоним, уточним, какая техника должна работать при отключении и сколько часов, и пришлём расчёт с ценой.</p></div>
+<form onsubmit="event.preventDefault();alert('Учебная версия: заявки пока никуда не отправляются.')">
+<label>Имя<input type="text" placeholder="Как к вам обращаться" required></label>
+<label>Телефон<input type="tel" placeholder="+7" required></label>
+<label>Что должно работать при отключении<textarea rows="3" placeholder="Например: 10 компьютеров, роутер, касса, освещение"></textarea></label>
+<label class="check"><input type="checkbox" required>Согласен на обработку персональных данных в соответствии с политикой конфиденциальности</label>
+<button type="submit" class="btn btn-accent">Получить расчёт</button>
+</form>
+</div></section>
+
+<footer id="contacts"><div class="wrap">
+<div class="fgrid">
+<div><div style="font-size:22px;font-weight:800;color:#fff;letter-spacing:1px">SOLAR</div><span>Резервное и солнечное питание для офисов, магазинов и складов. Расчёт, поставка, монтаж и сервис с 2011 года.</span><span>[ООО, ОГРН, ИНН]</span></div>
+<div><span class="ftitle">Оборудование</span><a href="#products">Инверторы</a><a href="#products">Аккумуляторы</a><a href="#products">Солнечные панели</a><a href="#products">Готовые решения</a></div>
+<div><span class="ftitle">Контакты</span><span><a href="tel:+79008888777" style="color:inherit;text-decoration:none">+7 (900) 888-87-77</a></span><span><a href="mailto:solar@gmail.com" style="color:inherit">solar@gmail.com</a></span><span>[АДРЕС ОФИСА ИЛИ СКЛАДА]</span></div>
+</div>
+<div class="fbottom"><span>© 2011–2026 SOLAR</span><span style="display:flex;flex-wrap:wrap;gap:8px 24px"><a href="#">Политика конфиденциальности</a><a href="#">Согласие на обработку персональных данных</a></span></div>
+</div></footer>
+
+</body>
+</html>
